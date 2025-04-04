@@ -1,0 +1,962 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Oxanium', sans-serif;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+
+main {
+    flex: 1;
+    /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(0, 0, 0);
+    border: 1px solid;
+    /* Añadimos un borde */
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0)) 1;
+    /* Borde degradado con transparencia */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.navbar-title::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.navbar-title:hover::after {
+    opacity: 1;
+}
+
+.navbar-right .nav-link {
+    margin: 2px 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-right .nav-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    /* Oculta el botón de menú en pantallas grandes */
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 48rem) {
+    .menu-toggle {
+        display: block;
+        /* Muestra el botón hamburguesa */
+    }
+
+    .navbar-right {
+        display: none;
+        /* Oculta el menú por defecto */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* Fondo negro con transparencia */
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 80%;
+        transform: translateX(-50%) translateY(-10px);
+        opacity: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 0.5rem;
+        border: 1px solid;
+        /* Añadimos un borde */
+        border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0)) 1;
+        /* Borde degradado con transparencia */
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .navbar-right.active {
+        display: flex;
+        /* Muestra el menú cuando se active */
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px;
+        border: none;
+    }
+
+    .navbar-title{
+        font-size: 18px;
+    }
+}
+
+
+/* HOME SECTION */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: 100%;
+    transition: opacity 0.8s ease-in-out;
+    opacity: 0;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-item video,
+  .carousel-item img {
+    width: 100%;
+    max-width: 50vw;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-control.prev {
+    left: 15px;
+  }
+  
+  .carousel-control.next {
+    right: 15px;
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 100;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: gray;
+  }
+  
+  .section {
+    text-align: center;
+  }
+  
+  .home-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .header-container {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .main-header {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .sub-header {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  
+  .sub-sub-header {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 300;
+  }
+  
+  .services-section {
+    padding: 50px 20px;
+    background-color: black;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .service-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  .service-item:hover .service-icon {
+    transform: scale(1.2);
+  }
+  
+  .service-item:hover .service-title,
+  .service-item:hover .service-description {
+    transform: scale(1.05);
+  }
+  
+  /*Estilos para pantallas pequeñas*/
+  @media (max-width: 48rem) {
+    .home-section {
+      /* Se cambia a auto para evitar que el carousel exceda el tamaño de la imagen en pantallas pequeñas */
+      height: auto;
+      position: relative;
+      display: block;
+    }
+    .carousel {
+      /* Ajuste para que la altura se adapte al contenido en pantallas pequeñas */
+      height: auto;
+    }
+    .carousel-item video,
+    .carousel-item img {
+      width: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .header-container {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      text-align: center;
+      z-index: 10;
+    }
+    .main-header {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .sub-header {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .sub-sub-header {
+      font-size: 1.25rem;
+    }
+    .carousel-indicators {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px; /* Mayor espacio horizontal entre indicadores */
+      z-index: 100;
+    }
+    .indicator {
+      width: 10px;
+      height: 10px;
+    }
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .service-item {
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+
+  
+  
+
+/* COLLECTIONS SECTION */
+
+.collections-section {
+    padding: 50px 20px;
+    background-color: black;
+}
+
+.collections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.collection-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.collection-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.collection-card {
+    width: 45%;
+    max-width: 45vw;
+    /* Ajustar al 45% de la pantalla en pantallas grandes */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.collection-card video,
+.collection-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.collection-info {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.collection-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.collection-description {
+    font-size: 1rem;
+    color: white;
+}
+
+.collection-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    /* Sombreado blanco detrás al hacer hover */
+}
+
+.collection-item:hover .collection-card {
+    transform: scale(1.05);
+}
+
+.collection-item:hover .collection-card video,
+.collection-item:hover .collection-card img {
+    transform: scale(1.1);
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 48rem) {
+    .collections-container {
+        gap: 20px;
+    }
+
+    .collection-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .collection-item.reverse {
+        flex-direction: column;
+    }
+
+    .collection-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .collection-info {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* PORTFOLIO */
+.portfolio-grid {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    aspect-ratio: 1 / 1;
+    /* Fuerza que cada tarjeta sea cuadrada */
+    /* Opcionalmente, asegúrate de que la tarjeta no se expanda con contenido interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(50%) blur(2px);
+}
+
+.project-card h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.project-card:hover h3 {
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
+}
+
+.project-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(100%) blur(0);
+}
+
+
+/* PROJECT SECTION */
+.project-section {
+    padding: 15px;
+
+}
+
+@media (max-width: 900px) {
+    .project-section {
+        padding: 5px;
+    }
+}
+
+.project-title {
+    font-size: 3rem;
+    text-align: center
+}
+
+
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    /* margin-bottom: 40px; <-- opcional si deseas más espacio antes de la galería */
+}
+
+.project-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.turntable-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.turntable-card video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.about-title {
+    margin-bottom: 20px;
+}
+
+.project-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-details {
+    font-size: 1.2rem;
+    line-height: 2.5;
+    list-style: none;
+    padding: 2rem;
+}
+
+.project-details p {
+    margin-bottom: 20px;
+}
+
+/* GALLERY */
+.gallery-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 10px;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    filter: brightness(1.2);
+}
+
+/* CUADRADAS (1x1) */
+.gallery-item.square {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 1 / 1;
+}
+
+/* HORIZONTALES (2 columnas de ancho, 1 de alto) */
+.gallery-item.horizontal {
+    grid-column: span 2;
+    grid-row: span 1;
+    aspect-ratio: 16 / 9;
+}
+
+/* VERTICALES (1 columna de ancho, 2 de alto) */
+.gallery-item.vertical {
+    grid-column: span 1;
+    grid-row: span 2;
+    aspect-ratio: 9 / 16;
+}
+
+/* 💡 IMÁGENES Y VIDEOS: SE ADAPTAN AL ESPACIO SIN DEFORMARSE */
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .gallery-title {
+        padding: auto;
+    }
+
+    /* La sección del proyecto se apila en columna */
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-details p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    /* Forzamos la galería a una sola columna */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 10px;
+    }
+
+    .gallery-item {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        aspect-ratio: auto !important;
+    }
+}
+
+.gallery-title,
+.about-title {
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+
+}
+
+/*SUBRAYADO*/
+
+.gallery-title::after,
+.about-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    /* Longitud del subrayado, ajústalo a tu gusto */
+    height: 2px;
+    background-color: white;
+    opacity: 0.8;
+    /* Para un toque sutil */
+}
+
+
+/* BOTON BACK TO PORTFOLIO */
+.back-to-portfolio-btn {
+    position: fixed;
+    top: 80px;
+    left: 25px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    z-index: 1100;
+}
+
+.back-to-portfolio-btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* MODAL PARA VER IMÁGENES EN PANTALLA COMPLETA */
+/* --- Estilos Actualizados para el Modal --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90vw;
+    /* El contenido no excederá el 90% del ancho de la pantalla */
+    max-height: 90vh;
+    /* El contenido no excederá el 90% del alto de la pantalla */
+}
+
+.modal-media {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    /* Asegura que la imagen/video se ajuste en altura */
+    object-fit: contain;
+    /* Se adapta sin recortes */
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+
+/* ABOUT ME */
+
+.about-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left section styles */
+.about-left {
+    text-align: left;
+
+}
+
+.about-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.about-left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Right section styles */
+.about-right {
+    text-align: left;
+}
+
+.about-right h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.about-right ul {
+    list-style-type: disc;
+    padding-left: 0px;
+}
+
+.about-right li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* CONTACT */
+
+.contact-section {
+    margin-bottom: 200px;
+    /* Añadir margen en la parte inferior de la sección */
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* Añadir una sombra al formulario */
+    transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: scale(1.02);
+    /* Aumentar ligeramente el tamaño al hacer hover */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 22px);
+    /* Dejar espacio a los lados */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Añadir transición para el borde y la sombra */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* Añadir sombra al enfocar */
+    outline: none;
+    /* Quitar el borde de enfoque predeterminado */
+}
+
+.contact-form button {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    /* Añadir transición para el fondo, el color y la transformación */
+    padding: 10px 15px;
+    /* Añadir un poco de relleno */
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.05);
+    /* Aumentar ligeramente el tamaño al hacer hover */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 48rem) {
+    .contact-section {
+        margin-bottom: 100px;
+        /* Añadir margen en la parte inferior de la sección */
+    }
+
+}
+
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    border-top: 1px solid white;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    transition: text-shadow 0.3s ease;
+}
+
+.footer a:hover {
+    color: rgb(226, 226, 226);
+    text-shadow: 0px 0px 10px white;
+}
+
+.footer-text {
+    margin-top: 10px;
+}

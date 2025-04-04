@@ -1,0 +1,24 @@
+{
+    "id": "hollow-ring",
+    "title": "Hollow Ring",
+    "priority": 1,
+    "about": {
+      "history": "Modeled in mid 2024 this was a key project for exploring various rendering techniques.",
+      "element_info": "Hollow Ring is a mesmerizing, twisted band of shimmering metal, radiating an otherworldly aura. Through the power of geometry nodes in Blender, intricate patterns and special effects emerge across its hollow form, creating a dynamic spectacle of light and shadow. This ring embodies a fusion of mystic elegance and cutting-edge design—an exotic statement piece that showcases how even the simplest shapes can transform into powerful works of art with the right blend of creativity and technology.",
+      "collection": "OUTER SPACE",
+      "technologies": ["Autodesk Maya (Arnold)", "Blender", "Keyshot"]
+    },
+    "media": {
+      "turntable_video": "/src/assets/img/HOLLOW RING/ORO_skyonfire_VIDEO.mp4",
+      
+      "gallery_images": [
+        { "src": "/src/assets/img/HOLLOW RING/Space_FINAL.jpg", "aspect": "sqare" },
+        { "src": "/src/assets/img/HOLLOW RING/GOLD_2.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/HOLLOW RING/IMG_6637.png", "aspect": "vertical" },
+        { "src": "/src/assets/img/HOLLOW RING/Oro_Sky_on_Fire.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/HOLLOW RING/Oro_Sky_on_Fire_FINAL.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/HOLLOW RING/ORO_presentación.jpg", "aspect": "horizontal" }
+      ],
+      "gallery_videos": []
+    }
+}

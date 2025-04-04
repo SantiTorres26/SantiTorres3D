@@ -1,12 +1,36 @@
+// Home.jsx
 import React from 'react';
+import Carousel from '../components/Carousel';
 
-// Importar las imágenes y videos
-import video1 from '../assets/img/ANILLOS_ORO_movimiento.mp4';
-import video2 from '../assets/img/2024.08.20-18.10.39.mp4';
-import video3 from '../assets/img/PRUEBA_02.mp4';
-import img1 from '../assets/img/Space_FINAL.jpg';
-import img2 from '../assets/img/RENDER_FINAL_t5.jpg';
-import img3 from '../assets/img/InExtrusionGold2.jpg';
+//importacion dinamica para el carousel
+const images = import.meta.glob('../assets/img/carousel/*.jpg', { eager: true });
+const videos = import.meta.glob('../assets/img/carousel/*.mp4', { eager: true });
+
+// Convertimos los archivos en un array de objetos con información para el carousel
+const imagesArray = Object.keys(images).map((path) => ({
+  type: 'image',
+  src: images[path].default,         // La propiedad .default es necesaria para acceder a la URL del recurso
+  alt: path.split('/').pop().replace(/\.[^/.]+$/, '') // Genera un texto alternativo a partir del nombre del archivo
+}));
+
+const videosArray = Object.keys(videos).map((path) => ({
+  type: 'video',
+  src: videos[path].default
+}));
+
+// Combinamos ambos arrays para formar el conjunto total de medios del carousel 
+const mediaItems = [...videosArray, ...imagesArray];
+const fixedMediaItems = mediaItems.slice(0, 6);
+
+//importacion estatica para collections y service icons
+import collSpaceFinal from '../assets/img/collections/Space_FINAL.jpg';
+import collLineasPuntos from '../assets/img/collections/LineasPuntos.mp4';
+import collTurntable from '../assets/img/collections/TURNTABLE.mp4';
+import collInExtrusion from '../assets/img/collections/INEXTRUSION_Turntable.mp4';
+import collLukeDarthVader from '../assets/img/collections/LukeDarthVader.jpg';
+import collRenderFinal from '../assets/img/collections/RENDER_FINAL.jpg';
+import collTurntableOphanim from '../assets/img/collections/TurntableOphanim.mp4';
+
 import icon1 from '../assets/img/3d_modeling.svg';
 import icon2 from '../assets/img/animations.svg';
 import icon3 from '../assets/img/web_development.svg';
@@ -16,51 +40,13 @@ const Home = () => {
     <main>
       {/* HOME Section */}
       <section className="section home-section">
-        <div className="carousel">
-          <div className="carousel-inner">
-            {/* Video 1 */}
-            <div className="carousel-item active">
-              <video src={video1} autoPlay loop muted></video>
-            </div>
-            {/* Video 2 */}
-            <div className="carousel-item">
-              <video src={video2} autoPlay loop muted></video>
-            </div>
-            {/* Video 3 */}
-            <div className="carousel-item">
-              <video src={video3} autoPlay loop muted></video>
-            </div>
-            {/* Image 1 */}
-            <div className="carousel-item">
-              <img src={img1} alt="Space FINAL" />
-            </div>
-            {/* Image 2 */}
-            <div className="carousel-item">
-              <img src={img2} alt="RENDER FINAL" />
-            </div>
-            {/* Image 3 */}
-            <div className="carousel-item">
-              <img src={img3} alt="InExtrusion Gold" />
-            </div>
-          </div>
-          {/* Carousel Controls */}
-          <button className="carousel-control prev" aria-label="Previous">&#10094;</button>
-          <button className="carousel-control next" aria-label="Next">&#10095;</button>
-          {/* Carousel Indicators */}
-          <div className="carousel-indicators">
-            <span className="indicator active"></span>
-            <span className="indicator"></span>
-            <span className="indicator"></span>
-            <span className="indicator"></span>
-            <span className="indicator"></span>
-            <span className="indicator"></span>
-          </div>
-          {/* Main Header Container */}
-          <div className="header-container">
-            <h1 className="main-header">WELCOME TO SANTI TORRES 3D</h1>
-            <h2 className="sub-header">Santiago Andrés Torres portfolio</h2>
-            <h3 className="sub-sub-header">Digital 3D Design & Animation</h3>
-          </div>
+        {/* Carousel con medios cargados dinámicamente */}
+        <Carousel mediaItems={fixedMediaItems} />
+        {/* Main Header Container (superpuesto al carousel) */}
+        <div className="header-container">
+          <h1 className="main-header">WELCOME TO SANTI TORRES 3D</h1>
+          <h2 className="sub-header">Santiago Andrés Torres portfolio</h2>
+          <h3 className="sub-sub-header">Digital 3D Design & Animation</h3>
         </div>
       </section>
 
@@ -78,7 +64,7 @@ const Home = () => {
             <img src={icon2} alt="Animations Icon" className="service-icon" />
             <h2 className="service-title">Animations</h2>
             <p className="service-description">
-              I bring static models to life with fluid and dynamic animations. Specializing in geometry nodes for motion graphics and visual effects, I create immersive experiences that captivate audiences. My animations are designed to add depth and realism to any project, from films to interactive media.
+              I bring static models to life with fluid and dynamic animations. Specializing in geometry nodes for motion graphics, simulations and visual effects, I create immersive experiences that captivate audiences. My animations are designed to add depth and realism to any project, from films to interactive media.
             </p>
           </div>
           <div className="service-item">
@@ -95,54 +81,81 @@ const Home = () => {
       <section className="section collections-section">
         <h1>Collections:</h1>
         <div className="collections-container">
-          {/* Collection 1 */}
           <div className="collection-item">
             <div className="collection-card">
-              <video src={video2} alt="Collection 1" autoPlay loop muted></video>
+              <video src={collLineasPuntos} autoPlay loop muted></video>
             </div>
             <div className="collection-info">
               <h2 className="collection-title">MOTION GRAPHICS</h2>
-              <p className="collection-description">Description for Collection 1. This collection features a variety of intricate designs and creative works.</p>
+              <p className="collection-description">
+                Description for Collection 1. This collection features a variety of intricate designs and creative works.
+              </p>
             </div>
           </div>
-          {/* Collection 2 */}
           <div className="collection-item reverse">
             <div className="collection-card">
-              <video src={video3} alt="Collection 2" autoPlay loop muted></video>
+              <img src={collSpaceFinal} alt="OUTER SPACE" className="collection-image" />
             </div>
             <div className="collection-info">
               <h2 className="collection-title">OUTER SPACE</h2>
-              <p className="collection-description">Description for Collection 2. This collection includes unique and detailed 3D models.</p>
+              <p className="collection-description">
+                Description for Collection 2. This collection includes unique and detailed 3D models.
+              </p>
             </div>
           </div>
-          {/* Collection 3 */}
           <div className="collection-item">
             <div className="collection-card">
-              <img src={img2} alt="Collection 3" className="collection-image" />
+              <video src={collTurntable} autoPlay loop muted></video>
             </div>
             <div className="collection-info">
               <h2 className="collection-title">DROIDS</h2>
-              <p className="collection-description">Description for Collection 3. This collection showcases a range of animations and visual effects.</p>
+              <p className="collection-description">
+                Description for Collection 3. This collection showcases a range of animations and visual effects.
+              </p>
             </div>
           </div>
-          {/* Collection 4 */}
           <div className="collection-item reverse">
             <div className="collection-card">
-              <video src={video1} alt="Collection 4" autoPlay loop muted></video>
+              <video src={collInExtrusion} autoPlay loop muted></video>
             </div>
             <div className="collection-info">
               <h2 className="collection-title">HEX</h2>
-              <p className="collection-description">Description for Collection 4. This collection includes unique and detailed 3D models.</p>
+              <p className="collection-description">
+                Description for Collection 4. This collection includes unique and detailed 3D models.
+              </p>
             </div>
           </div>
-          {/* Collection 5 */}
           <div className="collection-item">
             <div className="collection-card">
-              <img src={img1} alt="Collection 5" className="collection-image" />
+              <img src={collRenderFinal} alt="CHARACTERS" className="collection-image" />
             </div>
             <div className="collection-info">
               <h2 className="collection-title">CHARACTERS</h2>
-              <p className="collection-description">Description for Collection 5. This collection includes unique and detailed 3D models.</p>
+              <p className="collection-description">
+                Description for Collection 5. This collection includes unique and detailed 3D models.
+              </p>
+            </div>
+          </div>
+          <div className="collection-item reverse">
+            <div className="collection-card">
+              <img src={collLukeDarthVader} alt="WEAPONS" className="collection-image" />
+            </div>
+            <div className="collection-info">
+              <h2 className="collection-title">WEAPONS</h2>
+              <p className="collection-description">
+                Description for Collection 6. This collection includes unique and detailed 3D models.
+              </p>
+            </div>
+          </div>
+          <div className="collection-item">
+            <div className="collection-card">
+              <video src={collTurntableOphanim} autoPlay loop muted></video>
+            </div>
+            <div className="collection-info">
+              <h2 className="collection-title">FLYERS</h2>
+              <p className="collection-description">
+                Description for Collection 7. This collection includes unique and detailed 3D models.
+              </p>
             </div>
           </div>
         </div>

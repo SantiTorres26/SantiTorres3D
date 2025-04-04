@@ -1,0 +1,55 @@
+{
+    "id": "space-rings",
+    "title": "Space Rings",
+    "priority": 2,
+    "about": {
+        "history": "Modeled in 2024 using Maya.",
+        "element_info": "These cosmic rings draw inspiration from Saturn’s orbit yet feature ancient, weathered materials. Legend has it they have been floating in space for billions of years, subtly orchestrating the motion of celestial bodies and galaxies across the universe. Created from a spark of online inspiration, multiple rotations were tested to achieve different dynamic results. UV mapping was done in Blender, followed by texturing and rendering in Keyshot, blending the old with the futuristic to forge a mesmerizing vision of interstellar jewelry.",
+        "collection": "OUTER SPACE",
+        "technologies": [
+            "Maya",
+            "Blender (UV Mapping)",
+            "Keyshot"
+        ]
+    },
+    "media": {
+        "turntable_video": "/src/assets/img/SPACE RINGS/turntable.mp4",
+        "gallery_images": [
+            {
+                "src": "/src/assets/img/SPACE RINGS/Rings_Twisted.jpg",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/SPACE RINGS/ANILLOS_Closeup.jpg",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/SPACE RINGS/RINGS_closeup.jpg",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/SPACE RINGS/RingsVCloseUp.jpg",
+                "aspect": "horizontal"
+            },
+            {
+                "src": "/src/assets/img/SPACE RINGS/ANILLOS_ORO_01.jpg",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/SPACE RINGS/ANILLOS_ORO_02.jpg",
+                "aspect": "square"
+            }
+         
+        ],
+        "gallery_videos": [
+            {
+                "src": "/src/assets/img/SPACE RINGS/Rings_R_NoScratches.mp4",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/SPACE RINGS/RINGS_Reel.mp4",
+                "aspect": "vertical"
+            }
+        ]
+    }
+}

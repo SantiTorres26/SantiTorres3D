@@ -1,0 +1,88 @@
+{
+    "id": "ophanim-air",
+    "title": "Ophanim - Air",
+    "priority": 3,
+    "about": {
+        "history": "Created in early 2025, serving as the first collaborative project in the 3D design industry focused on brand advertisement and promotion.",
+        "element_info": "This project was developed for an electronic music event producer and record label featuring a logo of two interlocked rings. Tasked with conceptualizing and finalizing the 3D logo presentation, the visual animation, and overall branding, the result is a series of eye-catching flyers and promotional materials for each event date. Drawing inspiration from different elements of nature and their color palettes, the rings act as portals to various dimensions. Techniques vary according to each party’s concept, venue, and music style. Everything is created entirely in Blender.",
+        "collection": "FLYERS",
+        "technologies": [
+            "Blender"
+        ]
+    },
+    "media": {
+        "turntable_video": "/src/assets/img/OPHANIM/Turntable.mp4",
+        "gallery_images": [
+            {
+                "src": "/src/assets/img/OPHANIM/Encendidos_T1.jpg",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/AirRingOphanim_01.jpg",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/AirRingOphanim_02.jpg",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/Apagados_T1.jpg",
+                "aspect": "square"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/ornament_circle.jpg",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/Oscura.jpg",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/Epaaa.png",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/IMG_0017.png",
+                "aspect": "vertical"
+            }
+        ],
+        "gallery_videos": [
+            {
+                "src": "/src/assets/img/OPHANIM/FLYER_3D.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/FLYER_FINAL0001-0250.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/p1TOMA_2.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/p2toma_1.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/Placas_HISTORIAS.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/TOMA1(FINAAAAAL)0001-0250.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/TOMA20001-0250.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/TOMA40001-0250.mp4",
+                "aspect": "vertical"
+            },
+            {
+                "src": "/src/assets/img/OPHANIM/p1TOMA_3.mp4",
+                "aspect": "vertical"
+            }
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "r2d2",
+  "title": "R2D2",
+  "priority":6,
+  "about": {
+    "history": "Modeled in 2023, final project of a hard surface modeling course.",
+    "element_info": "R2-D2 is one of the most iconic and beloved characters in the Star Wars universe. A resilient astromech droid, R2-D2 has played a crucial role in saving the galaxy time and time again. With his intricate design and vast array of capabilities, including holographic communication, data storage, and mechanical assistance, R2 has proven to be much more than just a machine. His bravery and loyalty make him a central figure in the epic saga, navigating everything from starships to secret missions. This 3D model was created using Autodesk Maya for the modeling process and Keyshot for the texturing and rendering, capturing the spirit of this heroic character.",
+    "collection": "DROIDS",
+    "technologies": ["Autodesk Maya", "Keyshot"]
+  },
+  "media": {
+    "turntable_video": "/src/assets/img/R2D2/TURNTABLE.mp4",
+    "gallery_images": [
+      { "src": "/src/assets/img/R2D2/R2D2_CARD.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/Fotito_cool_pa_historia.jpg", "aspect": "vertical" },
+      { "src": "/src/assets/img/R2D2/R2D2_toma_3.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/R2D2_Toma1_Luz2.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/R2D2_Pies_Luz2.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/R2D2_Toma2_Luz2.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/R2D2_DarkNave.jpg", "aspect": "horizontal" },
+      { "src": "/src/assets/img/R2D2/R2D2_Reebels3.jpg", "aspect": "horizontal" },
+      { "src": "/src/assets/img/R2D2/R2D2_Toma2_Luz3.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/R2D2_Toma3.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/R2D2_Nave2.jpg", "aspect": "horizontal" },
+      { "src": "/src/assets/img/R2D2/R2D2_REBELS1.jpg", "aspect": "horizontal" },
+      { "src": "/src/assets/img/R2D2/R2D2_toma_4.jpg", "aspect": "square" }
+    ],
+    "gallery_videos": [
+      { "src": "/src/assets/img/R2D2/R2D2_Giro_Luz.mp4", "aspect": "vertical" },
+      { "src": "/src/assets/img/R2D2/Giro_Cabeza.mp4", "aspect": "square" },
+      { "src": "/src/assets/img/R2D2/R2D2_avanza.mp4", "aspect": "vertical" },
+      { "src": "/src/assets/img/R2D2/R2D2_Giro_Cabeza.mp4", "aspect": "vertical" }
+    ]
+  }
+}

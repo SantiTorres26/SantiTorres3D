@@ -13,7 +13,7 @@ const About = () => {
             <h2>¿Who am I?</h2>
             <p>
               <h3>Hi! I'm Santiago Andrés Torres.</h3>
-              I’m a passionate 3D enthusiast and a Web Development student based in Argentina, with a h3 focus on front-end
+              I’m a passionate 3D enthusiast and a Web Development student based in Argentina, with a high focus on front-end
               skills. My journey in the digital world has always been driven by a love for creativity and
               problem-solving.
             </p>

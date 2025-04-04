@@ -1,0 +1,27 @@
+{
+    "id": "extrude",
+    "title": "Extrude",
+    "priority": 4,
+    "about": {
+      "history": "Created in late 2024, employing extrusion techniques and hexagonal patterns to explore depth and form.",
+      "element_info": "The exploration of patterns and materials in 3D takes on a new dimension with Extrude, part of the HEX collection. As its name suggests, this design is brought to life through an extrusion process, generating a surface brimming with depth and dynamism. Each piece plays with light and texture to emphasize volumes and contrasts, resulting in a hypnotic geometric composition. Modeled in Autodesk Maya and rendered in Keyshot, demonstrates how repetition and structure can transform simplicity into something visually striking.",
+      "collection": "ABSTRACT",
+      "technologies": ["Autodesk Maya", "Keyshot"]
+    },
+    "media": {
+      "turntable_video": "/src/assets/img/EXTRUSION/PRUEBA_02.mp4",
+      "gallery_images": [
+        { "src": "/src/assets/img/EXTRUSION/VIOLETA01.jpg",     "aspect": "square" },
+        { "src": "/src/assets/img/EXTRUSION/Extrude_Final.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/EXTRUSION/Closeup2.jpg", "aspect": "vertical" },
+        { "src": "/src/assets/img/EXTRUSION/Extrusion1.jpg",    "aspect": "square" },
+        { "src": "/src/assets/img/EXTRUSION/Extrusion4.jpg",    "aspect": "square" },
+        { "src": "/src/assets/img/EXTRUSION/Extrusion5.jpg",    "aspect": "square" },
+        { "src": "/src/assets/img/EXTRUSION/Extrusion6.jpg",    "aspect": "square" },
+        { "src": "/src/assets/img/EXTRUSION/CloseUp1.jpg", "aspect": "vertical" }
+        
+      ],
+      "gallery_videos": []
+    }
+  }
+  

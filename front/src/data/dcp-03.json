@@ -1,0 +1,38 @@
+{
+    "id": "dcp-03",
+    "title": "DCP-03",
+    "priority":7,
+    "about": {
+      "history": "Modeled This is a project modeled in late 2023 as practice for a hard surface course. It's one of my first projects in this field, involving modeling, texturing, and rendering.",
+      "element_info": "DCP-03 is an original combat droid concept that began as a simple sketch with neither blueprints nor reference images, just pure imagination. Equipped with four legs and a front cannon, it was envisioned to patrol and engage in direct confrontation on the battlefield, drawing subtle inspiration from the Star Wars universe. The idea was to experiment with different color schemes and shader variations to give each version its own personality and narrative. Modeled in Maya,with test renders and iterative adjustments done using Arnold (Maya) and Keyshot, and rewoDCP-03 showcases how even a spontaneous design can evolve into a versatile, story-driven 3D asset.",
+      "collection": "DROIDS",
+      "technologies": ["Autodesk Maya", "Arnold", "Keyshot"]
+    },
+    "media": {
+      "turntable_video": "/src/assets/img/DCP-03/TurntableDcp.mp4",
+      "gallery_images": [
+        { "src": "/src/assets/img/DCP-03/Orange_02.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Orange_01.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Orange_03.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/RENDER_FINAL_t5.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/LUZ_FINAL_t1.jpg",    "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/LUZ_FINAL_t2.jpg",    "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/RENDER_FINAL_t3.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/REJILLA_AZUL_02.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/REJILLA_AZUL_03.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Green_01.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Green_02.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Green_03.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Yellow_01.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Yellow_02.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Yellow_03.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Pink_01.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Pink_02.jpeg", "aspect": "square" },
+        { "src": "/src/assets/img/DCP-03/Pink_03.jpeg", "aspect": "square" }
+        
+        
+      ],
+      "gallery_videos": []
+    }
+  }
+  

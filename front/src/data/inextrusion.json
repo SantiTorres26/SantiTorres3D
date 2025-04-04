@@ -1,0 +1,27 @@
+{
+    "id": "inextrusion",
+    "title": "Inextrusion",
+    "priority":5,
+    "about": {
+      "history": "Created in late 2024, employing insets and inward extrusions.",
+      "element_info": "Part of the HEX collection, Inextrusion is a study of geometric patterns applied to a sphere, where insets and inverted extrusions generate a structure of depth and hypnotic repetition. Each cutout is embedded into the surface, creating an interplay of shadows and reliefs that transforms the spherical form into an object of architectural complexity. The combination of geometric precision and volume manipulation turns this piece into a visual experiment where order and symmetry intertwine with depth and light. Modeled in Autodesk Maya and rendered in Keyshot, Inextrusion pushes the boundaries of form and structure.",
+      "collection": "ABSTRACT",
+      "technologies": ["Autodesk Maya", "Keyshot"]
+    },
+    "media": {
+      "turntable_video": "/src/assets/img/INEXTRUSION/INEXTRUSION_Turntable.mp4",
+      "gallery_images": [
+        { "src": "/src/assets/img/INEXTRUSION/InExtrusionGold2.jpg",        "aspect": "square" },
+        { "src": "/src/assets/img/INEXTRUSION/INEXTRUSION_ChromeBlack.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/INEXTRUSION/INEXTRUSION_Glass.jpg",        "aspect": "square" },
+        { "src": "/src/assets/img/INEXTRUSION/INEXTRUSION_Skin02.jpg",       "aspect": "square" },
+        { "src": "/src/assets/img/INEXTRUSION/INEXTRUSION_Wood.jpg",         "aspect": "square" },
+        { "src": "/src/assets/img/INEXTRUSION/INEXTRUSION_XrayEmmissive.jpg","aspect": "square" },
+        { "src": "/src/assets/img/INEXTRUSION/InExtrusionGold.jpg",         "aspect": "square" },
+        { "src": "/src/assets/img/INEXTRUSION/cu1.jpg",                     "aspect": "vertical" },
+        { "src": "/src/assets/img/INEXTRUSION/cu2.jpg",                     "aspect": "vertical" }
+      ],
+      "gallery_videos": []
+    }
+  }
+  
