@@ -13,6 +13,12 @@ body {
     /* Asegura que el cuerpo ocupe toda la altura de la ventana */
 }
 
+img,
+video {
+  display: block;
+  vertical-align: top;
+}
+
 
 main {
     flex: 1;
@@ -128,7 +134,7 @@ main {
         border: none;
     }
 
-    .navbar-title{
+    .navbar-title {
         font-size: 18px;
     }
 }
@@ -141,27 +147,27 @@ main {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .carousel-inner {
+}
+
+.carousel-inner {
     display: flex;
     height: 100%;
     transition: transform 1s ease;
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
     min-width: 100%;
     height: 100%;
     transition: opacity 0.8s ease-in-out;
     opacity: 0;
-  }
-  
-  .carousel-item.active {
+}
+
+.carousel-item.active {
     opacity: 1;
-  }
-  
-  .carousel-item video,
-  .carousel-item img {
+}
+
+.carousel-item video,
+.carousel-item img {
     width: 100%;
     max-width: 50vw;
     height: auto;
@@ -169,9 +175,9 @@ main {
     object-position: center;
     display: block;
     margin: 0 auto;
-  }
-  
-  .carousel-control {
+}
+
+.carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -181,17 +187,17 @@ main {
     padding: 10px;
     cursor: pointer;
     z-index: 10;
-  }
-  
-  .carousel-control.prev {
+}
+
+.carousel-control.prev {
     left: 15px;
-  }
-  
-  .carousel-control.next {
+}
+
+.carousel-control.next {
     right: 15px;
-  }
-  
-  .carousel-indicators {
+}
+
+.carousel-indicators {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -199,72 +205,72 @@ main {
     display: flex;
     gap: 5px;
     z-index: 100;
-  }
-  
-  .indicator {
+}
+
+.indicator {
     width: 10px;
     height: 10px;
     background-color: white;
     border-radius: 50%;
     cursor: pointer;
-  }
-  
-  .indicator.active {
+}
+
+.indicator.active {
     background-color: gray;
-  }
-  
-  .section {
+}
+
+.section {
     text-align: center;
-  }
-  
-  .home-section {
+}
+
+.home-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .header-container {
+}
+
+.header-container {
     position: absolute;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     z-index: 10;
-  }
-  
-  .main-header {
+}
+
+.main-header {
     font-size: 2.5rem;
     color: white;
     margin-bottom: 10px;
-  }
-  
-  .sub-header {
+}
+
+.sub-header {
     font-size: 1.5rem;
     color: white;
     margin-bottom: 10px;
     font-weight: 300;
-  }
-  
-  .sub-sub-header {
+}
+
+.sub-sub-header {
     font-size: 1.25rem;
     color: white;
     font-weight: 300;
-  }
-  
-  .services-section {
-    padding: 50px 20px;
+}
+
+.services-section {
+    padding: 25px 20px;
     background-color: black;
-  }
-  
-  .services-container {
+}
+
+.services-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     gap: 20px;
-  }
-  
-  .service-item {
+}
+
+.service-item {
     flex: 1;
     text-align: center;
     position: relative;
@@ -274,143 +280,176 @@ main {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     padding: 20px;
     margin-bottom: 10px;
-  }
-  
-  .service-icon {
+}
+
+.service-icon {
+    display: inline-block; 
+    vertical-align: middle; 
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
   }
   
-  .service-title {
+
+.service-title {
     font-size: 1.5rem;
     color: white;
     margin-bottom: 10px;
     font-weight: 600;
     transition: transform 0.3s ease;
-  }
-  
-  .service-description {
+}
+
+.service-description {
     font-size: 1rem;
     color: white;
     margin-bottom: 20px;
     text-align: center;
     transition: transform 0.3s ease;
-  }
-  
-  .service-item:hover {
+}
+
+.service-item:hover {
     transform: scale(1.01);
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
-  }
-  
-  .service-item:hover .service-icon {
+}
+
+.service-item:hover .service-icon {
     transform: scale(1.2);
-  }
-  
-  .service-item:hover .service-title,
-  .service-item:hover .service-description {
+}
+
+.service-item:hover .service-title,
+.service-item:hover .service-description {
     transform: scale(1.05);
-  }
-  
-  /*Estilos para pantallas pequeñas*/
-  @media (max-width: 48rem) {
+}
+
+/*Estilos para pantallas pequeñas*/
+@media (max-width: 48rem) {
     .home-section {
-      /* Se cambia a auto para evitar que el carousel exceda el tamaño de la imagen en pantallas pequeñas */
-      height: auto;
-      position: relative;
-      display: block;
+        /* Se cambia a auto para evitar que el carousel exceda el tamaño de la imagen en pantallas pequeñas */
+        height: auto;
+        position: relative;
+        display: block;
     }
+
     .carousel {
-      /* Ajuste para que la altura se adapte al contenido en pantallas pequeñas */
-      height: auto;
+        /* Ajuste para que la altura se adapte al contenido en pantallas pequeñas */
+        height: auto;
     }
+
     .carousel-item video,
     .carousel-item img {
-      width: 100%;
-      max-width: 100%;
-      object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
     }
+
     .header-container {
-      position: absolute;
-      top: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      text-align: center;
-      z-index: 10;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+        z-index: 10;
     }
+
     .main-header {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+        font-size: 1.75rem;
+        margin-bottom: 10px;
     }
+    
+
     .sub-header {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
     }
+
     .sub-sub-header {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
+
     .carousel-indicators {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 10px; /* Mayor espacio horizontal entre indicadores */
-      z-index: 100;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        /* Mayor espacio horizontal entre indicadores */
+        z-index: 100;
     }
+
     .indicator {
-      width: 10px;
-      height: 10px;
+        width: 10px;
+        height: 10px;
     }
+
     .services-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
+
     .service-item {
-      padding: 1rem;
-      text-align: center;
+        padding: 1rem;
+        text-align: center;
     }
+}
+
+
+
+
+/* COLLECTIONS SECTION */ 
+   
+.collections-title {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
   }
-
   
+  .collections-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 10%; /* Ajusta este valor según tu necesidad */
+    height: 3px;
+    background-color: white;
+    opacity: 0.8;
+  }
   
-
-/* COLLECTIONS SECTION */
-
 .collections-section {
-    padding: 50px 20px;
     background-color: black;
 }
 
 .collections-container {
     display: flex;
     flex-direction: column;
+    margin: 20px;
     gap: 30px;
 }
 
+/* MANTENEMOS EL LAYOUT DE DOS COLUMNAS */
 .collection-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Se elimina el borde y la transición de este contenedor */
 }
 
 .collection-item.reverse {
     flex-direction: row-reverse;
 }
 
+/* La tarjeta contendrá solo la imagen o video, con borde y efectos hover */
 .collection-card {
     width: 45%;
-    max-width: 45vw;
-    /* Ajustar al 45% de la pantalla en pantallas grandes */
+    max-width: 45vw; /* Ajustar al 45% de la pantalla en pantallas grandes */
     position: relative;
     overflow: hidden;
+    border: 1px solid white;  /* Borde aplicado aquí */
     border-radius: 8px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -423,66 +462,93 @@ main {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Efecto hover aplicado solo a la tarjeta */
+.collection-card:hover {
+    transform: scale(1.05);
+}
+
+.collection-card:hover video,
+.collection-card:hover img {
+    transform: scale(1.1);
+}
+
+/* La información (título y descripción) queda fuera de la tarjeta */
 .collection-info {
     flex: 1;
     padding: 20px;
     text-align: center;
-    /* Centrar el texto */
 }
 
-.collection-title {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
+
 
 .collection-description {
     font-size: 1rem;
     color: white;
-}
+}.collection-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .collection-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 2px;
+    background-color: white;
+    opacity: 0.8;
+  }
+  
+/*PANTALLAS PEQUEÑAS*/
 
-.collection-item:hover {
-    transform: scale(1.01);
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
-    /* Sombreado blanco detrás al hacer hover */
-}
-
-.collection-item:hover .collection-card {
-    transform: scale(1.05);
-}
-
-.collection-item:hover .collection-card video,
-.collection-item:hover .collection-card img {
-    transform: scale(1.1);
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 48rem) {
-    .collections-container {
-        gap: 20px;
-    }
-
+  @media (max-width: 48rem) {
     .collection-item {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
+  
     .collection-item.reverse {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .collection-card {
-        width: 100%;
-        height: auto;
+      /* La tarjeta ocupa todo el ancho y mantiene una proporción */
+      width: 100%;
+      aspect-ratio: 1/1; /* Ajusta este valor a tu gusto (4/3, 16/9, etc.) */
+      border: 1px solid white;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      overflow: hidden;   /* Oculta cualquier sobrante */
+      position: relative; /* Necesario para posicionar la imagen/video */
     }
-
+  
+    .collection-card img,
+    .collection-card video {
+      position: absolute; /* Llenan todo el contenedor */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  
     .collection-info {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
     }
-}
+  }
+  
+  
+
 
 /* PORTFOLIO */
 .portfolio-grid {
@@ -490,6 +556,12 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+}
+
+@media (max-width: 48rem) {
+    .portfolio-grid {
+        gap: 4px;
+    }
 }
 
 .project-card {
@@ -727,6 +799,8 @@ main {
     opacity: 0.8;
     /* Para un toque sutil */
 }
+
+  
 
 
 /* BOTON BACK TO PORTFOLIO */

@@ -27,7 +27,7 @@ import collSpaceFinal from '../assets/img/collections/Space_FINAL.jpg';
 import collLineasPuntos from '../assets/img/collections/LineasPuntos.mp4';
 import collTurntable from '../assets/img/collections/TURNTABLE.mp4';
 import collInExtrusion from '../assets/img/collections/INEXTRUSION_Turntable.mp4';
-import collLukeDarthVader from '../assets/img/collections/LukeDarthVader.jpg';
+import collLukeDarthVader from '../assets/img/collections/LukeDarthVader.jpeg';
 import collRenderFinal from '../assets/img/collections/RENDER_FINAL.jpg';
 import collTurntableOphanim from '../assets/img/collections/TurntableOphanim.mp4';
 
@@ -79,7 +79,7 @@ const Home = () => {
 
       {/* Collections Section */}
       <section className="section collections-section">
-        <h1>Collections:</h1>
+        <h1 className='collections-title'>COLLECTIONS</h1>
         <div className="collections-container">
           <div className="collection-item">
             <div className="collection-card">
