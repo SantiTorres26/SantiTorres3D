@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensajes de Contacto</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-panel">
+    <h1>Mensajes de Contacto</h1>
+    <table class="projects-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Mensaje</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each messages}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.name}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.message}}</td>
+          <td>{{this.created_at}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <a href="/admin" class="btn">Volver al Panel</a>
+  </div>
+</body>
+</html>

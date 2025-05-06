@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Trabajos</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-panel">
+    <h1>Trabajos / Proyectos</h1>
+
+    <!-- 1) Botón para agregar -->
+    <a href="/admin/projects/add" class="add-btn">+ Agregar Nuevo Trabajo</a>
+
+    <table class="projects-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Descripción</th>
+          <th>Fecha</th>
+          <!-- 2) Cabecera de Acciones -->
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each projects}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td>{{this.title}}</td>
+          <td>{{this.description}}</td>
+          <td>{{this.date}}</td>
+          <!-- 3) Botones de editar y eliminar -->
+          <td class="projects-actions">
+            <button class="edit-btn"
+              onclick="window.location.href='/admin/projects/edit/{{this.id}}'">
+              ✏️
+            </button>
+            <button class="delete-btn"
+              onclick="window.location.href='/admin/projects/delete/{{this.id}}'">
+              ❌
+            </button>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <a href="/admin" class="btn">Volver al Panel</a>
+  </div>
+</body>
+</html>

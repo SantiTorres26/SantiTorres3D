@@ -1,0 +1,158 @@
+/* 1) Estilo general del body para un fondo oscuro */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* FONDO oscuro */
+  color: white; 
+  font-family: sans-serif;
+}
+
+/* 2) Sección principal del login (similar a .contact-section) */
+.admin-section {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 3) Formulario (similar a .contact-form) */
+.admin-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto al hacer hover en el formulario */
+.admin-form:hover {
+  transform: scale(1.02);
+}
+
+/* 4) Inputs dentro del formulario */
+.admin-form input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al enfocar un input */
+.admin-form input:focus {
+  border-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+/* 5) Botón */
+.admin-form button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Hover en el botón */
+.admin-form button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.05);
+}
+
+/* 6) Mensaje de error */
+.error {
+  color: #ff7070;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+/* === Estilos para la tabla de proyectos === */
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.projects-table th,
+.projects-table td {
+  padding: 12px;
+  border: 1px solid white;
+  color: white;
+}
+.projects-table th {
+  background-color: rgba(255,255,255,0.2);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.projects-table tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}
+.projects-actions button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.projects-actions .edit-btn {
+  color: #4caf50;
+}
+.projects-actions .delete-btn {
+  color: #f44336;
+}
+
+/* Botón “Agregar” */
+.add-btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.add-btn:hover {
+  transform: scale(1.05);
+}
+
+/* === Barra de navegación del panel admin === */
+.admin-nav {
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.admin-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+.admin-nav li {
+  margin: 0;
+}
+.admin-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+.admin-nav a:hover {
+  color: #ddd;
+}
+

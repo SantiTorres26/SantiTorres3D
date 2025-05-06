@@ -1,24 +1,24 @@
+<!-- back/views/login.handlebars -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Login - Admin</title>
+  <meta charset="UTF-8">
+  <title>Login - Admin</title>
+  <!-- Vinculamos el CSS (verifica que la ruta sea correcta) -->
+  <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body>
+  <main class="admin-section">
     <h1>Iniciar Sesión</h1>
     {{#if error}}
-      <p style="color:red;">{{error}}</p>
+      <p class="error">{{error}}</p>
     {{/if}}
-    <form action="/login" method="POST">
-        <div>
-            <label for="username">Usuario:</label>
-            <input type="text" name="username" id="username" required>
-        </div>
-        <div>
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password" id="password" required>
-        </div>
-        <button type="submit">Acceder</button>
+    <!-- Nota que le agregamos la clase "admin-form" -->
+    <form action="/login" method="POST" class="admin-form">
+      <input type="text" name="username" placeholder="Nombre de usuario" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button type="submit">Acceder</button>
     </form>
+  </main>
 </body>
 </html>

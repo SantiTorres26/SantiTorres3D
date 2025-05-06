@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Panel de Administración</title>
-</head>
-<body>
-    <h1>Bienvenido al Panel de Administración</h1>
-    <p>ID de usuario: {{user}}</p>
-    <a href="/logout">Cerrar Sesión</a>
-</body>
+    <link rel="stylesheet" href="/css/admin.css">
+  </head>
+  <body>
+    <div class="admin-panel">
+      <h1>Panel de Administración</h1>
+      <p>ID de usuario: {{user}}</p>
+      <nav>
+        <a href="/logout" class="btn logout-btn">Cerrar Sesión</a>
+      </nav>
+      <!-- Se podrán agregar más secciones en el futuro, como el listado de proyectos -->
+    </div>
+  </body>
 </html>

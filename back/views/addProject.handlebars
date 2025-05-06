@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar Proyecto</title>
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-panel">
+    <h1>Agregar Nuevo Proyecto</h1>
+    <form action="/admin/projects/add" method="POST" class="admin-form">
+      <input type="text" name="title" placeholder="Título del proyecto" required>
+      <textarea name="description" placeholder="Descripción del proyecto" rows="4" required></textarea>
+      <input type="date" name="date" required>
+      <button type="submit">Guardar Proyecto</button>
+    </form>
+    <a href="/admin/projects" class="btn">Cancelar</a>
+  </div>
+</body>
+</html>
