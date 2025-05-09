@@ -10,13 +10,13 @@ const About = () => {
   useEffect(() => {
     fetch('http://localhost:4000/api/projects')
       .then(res => {
-        if (!res.ok) throw new Error('Error cargando proyectos');
+        if (!res.ok) throw new Error('Failed loading projects..');
         return res.json();
       })
       .then(data => setProjects(data))
       .catch(err => {
         console.error(err);
-        setError('No se pudieron cargar los proyectos.');
+        setError('Failed to load projects..');
       });
   }, []);
 

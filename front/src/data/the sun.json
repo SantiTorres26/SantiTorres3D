@@ -1,0 +1,22 @@
+{
+  "id": "the-sun",
+  "title": "The Sun",
+  "priority": 10,
+  "about": {
+    "history": "Created in early 2025 using Blender.",
+    "element_info": "This project is a detailed study of our star: the Sun. Using a blend of procedural textures and emissive node setups in Blender, the goal was to recreate the intense brightness, color gradients, and surface activity of the Sun as faithfully as possible. The design explores solar flares, plasma flow, and dynamic glow to simulate the powerful energy radiated by this celestial giant. It serves as a technical exercise in shader construction and light simulation, capturing the raw, overwhelming beauty of a burning sphere of nuclear fusion.",
+    "collection": "OUTER SPACE",
+    "technologies": ["Blender"]
+  },
+  "media": {
+    "turntable_video": "/src/assets/img/THE SUN/TheSunTurntable.mp4",
+    "gallery_images": [
+      { "src": "/src/assets/img/THE SUN/SunRender02.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/THE SUN/SunRender03.jpg", "aspect": "square" }
+    ],
+    "gallery_videos": [
+      { "src": "/src/assets/img/THE SUN/TheSun_vertical.mp4", "aspect": "vertical" },
+      { "src": "/src/assets/img/THE SUN/TheSun_vertical2.mp4", "aspect": "vertical" }
+    ]
+  }
+}

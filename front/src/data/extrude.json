@@ -1,7 +1,7 @@
 {
     "id": "extrude",
     "title": "Extrude",
-    "priority": 4,
+    "priority": 6,
     "about": {
       "history": "Created in late 2024, employing extrusion techniques and hexagonal patterns to explore depth and form.",
       "element_info": "The exploration of patterns and materials in 3D takes on a new dimension with Extrude, part of the HEX collection. As its name suggests, this design is brought to life through an extrusion process, generating a surface brimming with depth and dynamism. Each piece plays with light and texture to emphasize volumes and contrasts, resulting in a hypnotic geometric composition. Modeled in Autodesk Maya and rendered in Keyshot, demonstrates how repetition and structure can transform simplicity into something visually striking.",

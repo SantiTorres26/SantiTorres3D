@@ -6,16 +6,13 @@
   <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body>
-  <div class="admin-panel">
+  {{> adminNav}}
+  <div class="admin-content">
     <h1>Mensajes de Contacto</h1>
     <table class="projects-table">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Nombre</th>
-          <th>Email</th>
-          <th>Mensaje</th>
-          <th>Fecha</th>
+          <th>ID</th><th>Nombre</th><th>Email</th><th>Mensaje</th><th>Fecha</th><th>Acción</th>
         </tr>
       </thead>
       <tbody>
@@ -26,11 +23,13 @@
           <td>{{this.email}}</td>
           <td>{{this.message}}</td>
           <td>{{this.created_at}}</td>
+          <td class="msg-actions">
+            <a href="/admin/messages/delete/{{this.id}}" class="delete-btn">❌</a>
+          </td>
         </tr>
         {{/each}}
       </tbody>
     </table>
-    <a href="/admin" class="btn">Volver al Panel</a>
   </div>
 </body>
 </html>

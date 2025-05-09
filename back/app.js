@@ -37,6 +37,10 @@ app.get('/', (req, res) => {
 
 // Ruta de prueba de conexión a la base de datos
 const db = require('./config/db');
+
+//  Importa aquí el mailer para que ejecute verify() al arrancar 
+require('./config/mailer');
+
 app.get('/test-db', async (req, res) => {
   try {
     const [rows] = await db.query('SELECT 1 + 1 AS solution');
@@ -51,13 +55,13 @@ app.get('/test-db', async (req, res) => {
 const authRoutes     = require('./routes/auth');
 const adminRoutes    = require('./routes/admin');
 const projectsRoutes = require('./routes/projects');
-const messagesRoutes = require('./routes/messages');  // ← Nueva línea
+const messagesRoutes = require('./routes/messages');
 
 // Montar rutas
 app.use('/', authRoutes);
 app.use('/', adminRoutes);
 app.use('/', projectsRoutes);
-app.use('/', messagesRoutes);  // ← Y aquí
+app.use('/', messagesRoutes);
 
 // Iniciar servidor
 app.listen(PORT, () => {

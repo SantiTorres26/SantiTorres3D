@@ -1,0 +1,25 @@
+{
+    "id": "lightsabers",
+    "title": "Lightsabers",
+    "priority": 4,
+    "about": {
+      "history": "Started in 2023, this project represents my fascination with hard-surface modeling, which has driven my learning journey from the beginning.",
+      "element_info": "These iconic weapons from a more civilized age—used by both Jedi and Sith—are reimagined through my own lens. Some lightsabers were modeled in Autodesk Maya, while others took shape in Blender. I explored various shaders, emissive effects, and metallic finishes, running material and lighting tests in both Blender and Keyshot to enhance their cinematic feel. This collection is a tribute to the timeless power and symbolism of the lightsaber.",
+      "collection": "WEAPONS",
+      "technologies": ["Blender", "Autodesk Maya", "Keyshot"]
+    },
+    "media": {
+      "turntable_video": "/src/assets/img/LIGHTSABERS/ZoomVideo.mp4",
+      "gallery_images": [
+        { "src": "/src/assets/img/LIGHTSABERS/closeup_01.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/LIGHTSABERS/closeup_02.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/LIGHTSABERS/horizontal_01.jpg", "aspect": "vertical" },
+        { "src": "/src/assets/img/LIGHTSABERS/LukeReelIg.jpg", "aspect": "vertical" },
+        { "src": "/src/assets/img/LIGHTSABERS/LukePostIg.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/LIGHTSABERS/DarthVader01.jpg", "aspect": "square" },
+        { "src": "/src/assets/img/LIGHTSABERS/DarthVader02.jpg", "aspect": "vertical" }
+      ],
+      "gallery_videos": []
+    }
+  }
+  

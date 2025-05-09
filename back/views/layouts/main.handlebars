@@ -6,7 +6,19 @@
   <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body>
-  {{> adminNav}}
-  {{{body}}}
+  <div class="admin-container">
+    <nav class="admin-sidebar">
+      <h2 class="sidebar-title">ST3D Admin</h2>
+      <ul class="sidebar-links">
+        <li><a href="/admin">Panel</a></li>
+        <li><a href="/admin/projects">Proyectos</a></li>
+        <li><a href="/admin/messages">Mensajes</a></li>
+        <li><a href="/logout">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+    <main class="admin-content">
+      {{{body}}}
+    </main>
+  </div>
 </body>
 </html>

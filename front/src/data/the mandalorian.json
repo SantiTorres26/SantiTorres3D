@@ -1,0 +1,22 @@
+{
+  "id": "the-mandalorian",
+  "title": "The Mandalorian",
+  "priority": 10,
+  "about": {
+    "history": "Creado a finales de 2024 en Maya.",
+    "element_info": "This project is a detailed recreation of Din Djarin, also known as The Mandalorian, the iconic bounty hunter from the Star Wars universe. Set in the aftermath of the Galactic Empire's fall, Din is a lone Mandalorian warrior navigating a chaotic galaxy while upholding a strict code known as The Way. The 3D model captures the essence of his beskar armor and presence, blending sharp hard-surface modeling techniques with custom shaders and materials. Some parts were modeled in Maya, while others were refined and rendered in both Keyshot and Blender, exploring material variations and lighting to highlight the unique traits of this fan-favorite character.",
+    "collection": "CHARACTERS",
+    "technologies": ["Maya", "Keyshot", "Blender"]
+  },
+  "media": {
+    "turntable_video": "/src/assets/img/THE MANDALORIAN/Mando_turntable.mp4",
+    "gallery_images": [
+      { "src": "/src/assets/img/THE MANDALORIAN/Mando_Dark.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/THE MANDALORIAN/Mando_01.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/THE MANDALORIAN/Mando_02.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/THE MANDALORIAN/Mando_oreja.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/THE MANDALORIAN/Mando_presentacion.jpg", "aspect": "square" }
+    ],
+    "gallery_videos": []
+  }
+}

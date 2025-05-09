@@ -1,0 +1,23 @@
+{
+  "id": "d0",
+  "title": "D-0 (red)",
+  "priority": 9,
+  "about": {
+    "history": "Created in early 2024 using Autodesk Maya.",
+    "element_info": "Inspired by D-O, the quirky and loyal droid from Star Wars, this redesign gives the astromech a fresh personality. Featuring a reimagined single-wheel body and a completely new head structure, this interpretation maintains the spirit of the original character while introducing a sleek, updated aesthetic. With a more rugged wheel and sharper silhouette, this version feels both modern and nostalgic, capable of navigating complex environments with ease. The project was textured and rendered in Keyshot to enhance the mechanical details and polish its sci-fi look.",
+    "collection": "DROIDS",
+    "technologies": ["Autodesk Maya", "Keyshot"]
+  },
+  "media": {
+    "turntable_video": "/src/assets/img/D-0/D-0_video.mp4",
+    "gallery_images": [
+      { "src": "/src/assets/img/D-0/D-0_toma_1.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/D-0/D-0_toma_2.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/D-0/D-0_toma_3.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/D-0/D-0_toma_4.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/D-0/D-0_(truck)_desert.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/D-0/D-0_nave.jpg", "aspect": "horizontal" }
+    ],
+    "gallery_videos": []
+  }
+}

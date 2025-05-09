@@ -1,0 +1,22 @@
+{
+  "id": "low-poly",
+  "title": "Low-Poly",
+  "priority": 9,
+  "about": {
+    "history": "Created across various stages, from my beginnings in 3D modeling to more recent practice projects.",
+    "element_info": "The LOW – POLY collection is a curated set of compact 3D scenes and assets modeled with deliberately minimal polygon counts, designed as hands-on exercises for artists to master foundational workflows in their 3D software. Each piece—ranging from simple props like chairs and lamps to small urban vignettes—demonstrates how to build compelling forms by manipulating basic geometry, optimizing topology, and applying rudimentary lighting and materials. Working within these low-poly constraints encourages rapid iteration, teaches the relationship between model complexity and real-time performance, and reinforces best practices for clean mesh construction. By tackling projects at this smaller scale, users develop confidence in essential skills—vertex and edge editing, UV unwrapping, and scene composition—laying the groundwork for more ambitious, high-fidelity creations. Ultimately, this collection embodies the vital first steps every 3D artist takes: learning to think in polygons, to innovate within limits, and to establish a solid technical and creative foundation before embarking on larger, more complex endeavors.",
+    "collection": "LOW-POLY",
+    "technologies": ["Blender"]
+  },
+  "media": {
+    "turntable_video": null,
+    "gallery_images": [
+      { "src": "/src/assets/img/LOW-POLY/DioramNocturno_03.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/LOW-POLY/DioramNocturno_04.jpg", "aspect": "vertical" },
+      { "src": "/src/assets/img/LOW-POLY/martillo.jpeg", "aspect": "square" },
+      { "src": "/src/assets/img/LOW-POLY/Room.jpg", "aspect": "square" },
+      { "src": "/src/assets/img/LOW-POLY/Templo_Minas.jpg", "aspect": "square" }
+    ],
+    "gallery_videos": []
+  }
+}
